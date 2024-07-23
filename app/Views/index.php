@@ -153,7 +153,8 @@
                 backdrop: 'true'
             });
             $.ajax({
-                url: url,
+//manually fetch form
+                url: '/Home/add',
                 success: function(response) {
                     $('#modal_md .modal-title').html(title);
                     $('#modal_md .modal-body').html(response);
